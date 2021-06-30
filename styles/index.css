@@ -1,0 +1,223 @@
+.indexContainer {
+  display: flex;
+  overflow: hidden;
+  height: 2000px;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 1500px;
+  margin: 0 auto;
+  padding-top: 10%;
+  background: no-repeat url("/illustration.png");
+  background-size: contain;
+}
+
+.illustrationImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  background-image: linear-gradient(to right bottom, #8d3c55, #76395f, #5a3963, #3c3860, #1e3556);
+  width: 85%;
+}
+
+.titleContainer h1 {
+  color: white;
+  position: absolute;
+  top: 7%;
+  font-size: 45px;
+  left: 20%;
+}
+
+.cardBicorn {
+  background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
+  border-radius: 20px;
+  padding: 8%;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
+  height: 380px;
+}
+
+.cardBicorn h3 {
+  color: white;
+  font-size: 32px;
+}
+
+
+.comingSoonContainer {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.logoCarre {
+  height: 40px;
+
+}
+
+.harvest {
+  color: #768498;
+  font-size: 15px;
+}
+
+.locked {
+  color: #F4B1BA;
+  font-size: 15px;
+}
+
+.buttonContainer {
+  background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
+  width: 40%;
+  margin: 5% auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3% 4%;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
+  cursor: pointer;
+}
+
+.unlocked {
+  color: white;
+  font-size: 15px;
+}
+
+.textColor {
+  color: #A1AAB7;
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 22px;
+}
+.miniCard {
+  background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
+  border-radius: 20px;
+  padding: 5%;
+  height: 210px;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
+}
+
+.earn {
+  color: #ED475D;
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 32px;
+}
+
+.miniCardRose {
+  background-image: linear-gradient(to left, #ed475d, #f06071, #f27785, #f38c99, #f2a0ab);
+  border-radius: 20px;
+  padding: 5%;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
+}
+.comming {
+  color: #ED475D;
+  font-size: 32px;
+  font-family: MontSerrat-Bold, sans-serif;
+}
+
+.image {
+  display: flex;
+  margin-top: 15%;
+}
+
+.imgFleche {
+  margin-bottom: 45%;
+}
+
+.imgFleche2 {
+  margin-top: 60px;
+}
+
+.imageWhite {
+  display: flex;
+}
+
+.earnWhite {
+  font-family: MontSerrat-Bold, sans-serif;
+  color: white;
+  font-size: 22px;
+}
+
+.tokenName {
+  color: white;
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 32px;
+}
+
+.flex {
+  display: flex;
+}
+
+.cardStats {
+  background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
+  border-radius: 20px;
+  padding: 5%;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
+  height: 400px;
+}
+
+.bicorn {
+  font-family: MontSerrat-SemiBold, sans-serif;
+  font-size: 15px;
+  color: #768498;
+  margin-bottom: 3% !important;
+}
+
+.textColor2 {
+  color: #A1AAB7;
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 28px;
+}
+
+.price {
+  color: white;
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 15px;
+}
+
+.total {
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.comingSoon {
+  font-family: MontSerrat-Bold, sans-serif;
+  color: #F4B1BA;
+  font-size: 32px;
+  margin-bottom: 12% !important;
+}
+
+.tokenAdress {
+  text-align: center;
+  font-family: MontSerrat-SemiBold, sans-serif;
+  color: #768498;
+  margin-top: 14%;
+  font-size: 15px;
+}
+
+.adress {
+  text-align: center;
+  font-size: 16px;
+  font-family: MontSerrat-Bold, sans-serif;
+  color: white;
+  margin-bottom: 13%;
+}
+
+.addmetamask{
+  color: white;
+  font-family: MontSerrat-Bold, sans-serif;
+  font-size: 15px;
+}
+
+.connect {
+  position: absolute;
+  top: 2%;
+  right: 7%;
+}
+
+.buttonConnect {
+  cursor: pointer;
+  width: 180%;
+  display: inline-block;
+  padding: 20%;
+}

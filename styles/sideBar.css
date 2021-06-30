@@ -1,0 +1,89 @@
+.container-sideBar {
+  background-color: #1E3556;
+  height: 100%;
+  width: 15%;
+  padding-left: 2%;
+  margin-bottom: -5000px; /* any large number will do */
+  padding-bottom: 5000px;
+}
+
+.linkContainer {
+  display: flex;
+  height: 15px;
+  margin-top: 17%;
+  margin-bottom: 17%;
+  cursor: pointer;
+}
+
+
+.linkContainerPink {
+  background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
+  width: 70%;
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+  padding: 6% 4%;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
+  cursor: pointer;
+  margin-top: 17%;
+  margin-bottom: 17%;
+}
+
+.linkContainer p {
+  font-size: 15px;
+  color: #768498
+}
+
+.linkContainer img {
+  margin-right: 15%;
+}
+
+.linkContainerPink img {
+  margin-right: 15%;
+}
+
+.linkContainerPink p {
+  color: white;
+}
+
+
+
+
+.bicornSideBarLogo {
+  width: 50%;
+  margin-bottom: 20%;
+  margin-top: 13%;
+}
+
+.moreIcon {
+  height: 20% !important;
+  margin-top: 3%;
+}
+
+.logoImage {
+  height: 40%;
+  margin-right: 2%;
+}
+
+
+.priceMini {
+  color: #ED475D;
+  font-size: 15px;
+}
+
+.lang {
+  color: #73859B;
+  font-size: 15px;
+}
+
+.img-links {
+  height: 30px;
+}
+
+.links {
+  margin-top: 55%;
+}
+
+.black {
+  height: 100px;
+}

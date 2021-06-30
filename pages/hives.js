@@ -63,7 +63,7 @@ const IOSSwitch = withStyles((theme) => ({
   );
 });
 
-export default function Stakes() {
+export default function Hives() {
 
   const [open, setOpen] = React.useState(false);
 
@@ -82,7 +82,7 @@ export default function Stakes() {
   const [classNameStakes, setClassNameStakes] = useState('linkContainer');
 
   useEffect(() => {
-    setClassNameStakes('linkContainerPink')
+    setClassNameHives('linkContainerPink')
   })
 
   const [state, setState] = React.useState({
@@ -104,7 +104,7 @@ export default function Stakes() {
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
         <div className="main">
           <div className="imgContainer2">
-            {/* } <FormControlLabel
+            {/*} <FormControlLabel
               control={<IOSSwitch checked={state.checkedB} onChange={handleChange} name="checkedB" />}
               label="Stacked Only"
             />

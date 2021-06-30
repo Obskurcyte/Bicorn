@@ -1,0 +1,25 @@
+.referralProgram {
+  background-color: #1e3556;
+  text-align: center;
+  padding: 4%;
+}
+
+.referralProgram h1 {
+  color: #ed475d;
+}
+
+.referralProgram p {
+  color: white;
+}
+
+.unlockWallet {
+  background-color: #3b547a;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.unlockWallet p {
+  color: white;
+  text-align: center;
+}

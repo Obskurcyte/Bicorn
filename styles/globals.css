@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "MontSerrat-Regular";
+  src: local('Poppins'), url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MontSerrat-Bold";
+  src: local('Poppins'), url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "MontSerrat-SemiBold";
+  src: local('Poppins'), url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+
+h1, h3 {
+  font-family: MontSerrat-Bold, sans-serif;
+}
+
+a, p {
+  font-family: MontSerrat-SemiBold, sans-serif;
+  margin-bottom: 0!important;
+}
 html,
 body {
   padding: 0;
