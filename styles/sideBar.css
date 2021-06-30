@@ -3,10 +3,19 @@
   height: 100%;
   width: 15%;
   padding-left: 2%;
-  margin-bottom: -5000px; /* any large number will do */
-  padding-bottom: 5000px;
+
 }
 
+.container-sideBarActive {
+  background-color: #1E3556;
+  height: 100%;
+  max-width: 15%;
+}
+
+.iconBars{
+  margin-left: 10%;
+  color: white;
+}
 .linkContainer {
   display: flex;
   height: 15px;
@@ -15,6 +24,18 @@
   cursor: pointer;
 }
 
+.linkContainerActive {
+  display: flex;
+  height: 15px;
+  margin-top: 70%;
+  margin-bottom: 70%;
+  cursor: pointer;
+}
+
+.imgActive {
+  margin: 0 auto;
+  height: 20px;
+}
 
 .linkContainerPink {
   background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
@@ -66,24 +87,89 @@
 }
 
 
+
+.logoImageActive {
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+}
+
+
 .priceMini {
+color: #ED475D;
+font-size: 15px;
+}
+
+.priceMiniActive {
   color: #ED475D;
-  font-size: 15px;
+  font-size: 13px;
+  text-align: center;
 }
 
 .lang {
+color: #73859B;
+font-size: 15px;
+}
+
+.langActive {
   color: #73859B;
   font-size: 15px;
+  text-align: center;
 }
 
 .img-links {
-  height: 30px;
+height: 30px;
 }
 
+.img-linksActive {
+height: 25px;
+width: 25px;
+margin: 0 auto;
+}
 .links {
-  margin-top: 55%;
+margin-top: 55%;
 }
 
 .black {
-  height: 100px;
+height: 100px;
 }
+
+.active {
+display: none;
+}
+
+.none {
+  display: none;
+}
+
+
+@media screen and (max-width: 1500px){
+  .container-sideBar {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1170px){
+  .container-sideBar {
+    width: 20%;
+  }
+  .cardBicorn h3 {
+    font-size: 25px;
+  }
+  .container-sideBar {
+    width: 25%;
+  }
+  .buttonContainer {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 860px){
+  .display {
+    display: none;
+  }
+  .none {
+    display: block;
+  }
+}
+

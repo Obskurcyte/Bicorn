@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Head from "next/head";
-import SideBar from "../components/SideBar";
+import SideBar, {SideBarMobile} from "../components/SideBar";
 
 const Army = () => {
 
@@ -17,6 +17,7 @@ const Army = () => {
       </Head>
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
+        <SideBarMobile classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
         <div className="main">
           <div className="referralProgram">
             <h1>BicornSwap Referal Program</h1>

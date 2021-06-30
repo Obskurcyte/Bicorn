@@ -3,6 +3,7 @@ import Head from 'next/head';
 import SideBar from "../components/SideBar";
 import Link from 'next/link';
 import CardBicorn from "../components/cardBicorn";
+import {SideBarMobile} from "../components/SideBar";
 
 export default function Lottery () {
 
@@ -25,6 +26,7 @@ export default function Lottery () {
       </Head>
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
+        <SideBarMobile classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
         <div className="main">
           <div className="imgContainer">
           </div>

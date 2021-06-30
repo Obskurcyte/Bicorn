@@ -1,6 +1,5 @@
 .indexContainer {
   display: flex;
-  overflow: hidden;
   height: 2000px;
 }
 
@@ -21,7 +20,7 @@
 
 .main {
   background-image: linear-gradient(to right bottom, #8d3c55, #76395f, #5a3963, #3c3860, #1e3556);
-  width: 85%;
+  width: 100%;
 }
 
 .titleContainer h1 {
@@ -217,7 +216,29 @@
 
 .buttonConnect {
   cursor: pointer;
-  width: 180%;
   display: inline-block;
   padding: 20%;
+  background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
+  margin: 5% auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 580px) {
+  .indexContainer {
+    height: 3500px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .main {
+    width: 150%;
+  }
 }

@@ -13,6 +13,18 @@
   height: 1500px;
   margin: 0 auto;
   padding-top: 10%;
-  background: url("/pluiePiece.png");
+  background: url("/fondPiece2.png");
   background-size: contain;
+}
+
+@media screen and (max-width: 850px){
+  .comingSoonText {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .comingSoonText {
+    font-size: 30px;
+  }
 }

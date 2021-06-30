@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
-import SideBar from "../components/SideBar";
+import SideBar, {SideBarMobile} from "../components/SideBar";
 import Link from 'next/link';
 import CardBicorn from "../components/cardBicorn";
 
@@ -23,6 +23,7 @@ export default function Nap() {
       </Head>
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
+        <SideBarMobile classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
         <div className="main">
           <div className="imgContainerNap">
             <div className="comingSoonContainer">

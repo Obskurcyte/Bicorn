@@ -74,7 +74,7 @@ const CardHives = () => {
   return (
     <div className="cardBicorn hiveCard">
       <div className="titleContainer flex">
-        <img src={'/LogoBicorn.png'} alt="" className="imgCardHive"/>
+        <img src={'/logoEnvers.jpg'} alt="" className="imgCardHive"/>
         <div className='flex-column flex'>
           <h5 className="hiveTitle">Bicorn-Busd LP</h5>
           <div className="flex ml-3 fees my-3">

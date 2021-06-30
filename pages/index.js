@@ -3,6 +3,7 @@ import Head from 'next/head';
 import SideBar from "../components/SideBar";
 import Link from 'next/link';
 import CardBicorn from "../components/cardBicorn";
+import {SideBarMobile} from "../components/SideBar";
 
 export default function Home() {
 
@@ -23,14 +24,15 @@ export default function Home() {
       </Head>
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
+        <SideBarMobile classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
       <div className="main">
         <div className="imgContainer">
           <div className="cardsContainer container">
             <div className="row mb-4">
-              <div className="col">
+              <div className="col-sm my-3">
                 <CardBicorn />
               </div>
-              <div className="col">
+              <div className="col-sm my-3">
                 <div className="cardBicorn">
                   <h3>Your Lottery Winnings</h3>
                   <img src={'/comingSoon.png'} alt="" className="logoCarre mb-3"/>
@@ -44,7 +46,7 @@ export default function Home() {
               </div>
             </div>
             <div className="row mt-4 mb-4">
-              <div className="col">
+              <div className="col-sm my-3">
                 <div className="miniCard">
                   <h5 className="textColor">Earn up to</h5>
                   <h4 className="earn">855.15%</h4>
@@ -58,7 +60,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-sm my-3">
                 <div className="miniCardRose miniCard">
                   <h5 className='earnWhite'>TVL</h5>
                   <h4 className="tokenName">$132,356,112</h4>
@@ -73,7 +75,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div className="col">
+              <div className="col my-3">
                 <div className="miniCard">
                   <h5 className="textColor mb-4">Lottery</h5>
                   <h4 className="comming">Comming Soon</h4>
@@ -88,7 +90,7 @@ export default function Home() {
               </div>
             </div>
             <div className="row mt-4">
-              <div className="col">
+              <div className="col my-3">
                 <div className="cardStats">
                   <h3 className="textColor2 mb-4">Bicorn stats</h3>
                   <div className="flex justify-content-between">
@@ -129,7 +131,7 @@ export default function Home() {
 
               </div>
 
-              <div className="col">
+              <div className="col my-3">
                 <div className="cardStats">
                   <h3 className="textColor2">Bicorn Token</h3>
                   <h5 className="tokenAdress">Token Adress</h5>
@@ -152,7 +154,7 @@ export default function Home() {
         </div>
 
         <div className="connect">
-          <div className="buttonContainer buttonConnect">
+          <div className="buttonConnect">
             <p className="white connectText">Connect</p>
           </div>
         </div>

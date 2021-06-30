@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SideBar from "../components/SideBar";
+import SideBar, {SideBarMobile} from "../components/SideBar";
 import Link from 'next/link';
 import CardBicorn from "../components/cardBicorn";
 import CardHives from "../components/cardHives";
@@ -102,6 +102,7 @@ export default function Stakes() {
       </Head>
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
+        <SideBarMobile classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
         <div className="main">
           <div className="imgContainer2">
             {/* } <FormControlLabel

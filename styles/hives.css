@@ -164,3 +164,42 @@
   width: 100px;
   letter-spacing: 0.00938em;
 }
+
+
+@media screen and (max-width: 1176px){
+  .hiveTitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1088px){
+  .hiveTitle {
+    font-size: 20px;
+  }
+  .imgCardHive {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .hiveTitle {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 544px){
+  .hiveTitle {
+    font-size: 22px;
+  }
+  .imgCardHive {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 352px){
+  .hiveTitle {
+    font-size: 18px;
+  }
+}
