@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
 import SideBar, {SideBarMobile} from "../components/SideBar";
-import Link from 'next/link';
-import CardBicorn from "../components/cardBicorn";
+
 
 export default function Nap() {
 

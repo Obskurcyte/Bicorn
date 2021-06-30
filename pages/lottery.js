@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
 import SideBar from "../components/SideBar";
-import Link from 'next/link';
-import CardBicorn from "../components/cardBicorn";
 import {SideBarMobile} from "../components/SideBar";
 
 export default function Lottery () {
@@ -22,7 +20,7 @@ export default function Lottery () {
   return (
     <React.Fragment>
       <Head>
-        <title>Bircorn</title>
+        <title>Bicorn</title>
       </Head>
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
@@ -39,3 +37,4 @@ export default function Lottery () {
     </React.Fragment>
   )
 }
+

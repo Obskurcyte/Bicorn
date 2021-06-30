@@ -1,13 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
 import SideBar, {SideBarMobile} from "../components/SideBar";
-import Link from 'next/link';
-import CardBicorn from "../components/cardBicorn";
 import CardHives from "../components/cardHives";
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 
 const IOSSwitch = withStyles((theme) => ({
