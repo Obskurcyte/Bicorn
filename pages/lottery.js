@@ -30,7 +30,7 @@ export default function Lottery () {
           </div>
 
           <div className="comingSoonContainer">
-            <h1 className="white comingSoonText">Comming Soon</h1>
+            <h1 className="white comingSoonText">Coming Soon</h1>
           </div>
         </div>
       </div>

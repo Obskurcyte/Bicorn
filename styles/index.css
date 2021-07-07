@@ -4,13 +4,12 @@
 }
 
 .imgContainer {
-  position: relative;
   width: 100%;
-  height: 1500px;
-  margin: 0 auto;
+  height: 1600px;
   padding-top: 10%;
   background: no-repeat url("/illustration.png");
   background-size: contain;
+  margin: 0 auto;
 }
 
 .illustrationImg {
@@ -18,9 +17,13 @@
   margin: 0 auto;
 }
 
+.miniNav {
+  display: none;
+}
+
 .main {
-  background-image: linear-gradient(to right bottom, #8d3c55, #76395f, #5a3963, #3c3860, #1e3556);
-  width: 100%;
+  background-image: linear-gradient(to right bottom, #8d3c55, #7c3a5d, #693962, #533963, #3c3860, #30365b, #253456, #1b3250, #19304c, #172e47, #152b43, #13293f);  width: 100%;
+  margin-left: 13%;
 }
 
 .titleContainer h1 {
@@ -32,16 +35,21 @@
 }
 
 .cardBicorn {
-  background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
   border-radius: 20px;
   padding: 8%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
   height: 380px;
+  z-index: 1;
+  position: relative;
+  background: rgba(30, 53, 86, 0.7);
 }
+
 
 .cardBicorn h3 {
   color: white;
   font-size: 32px;
+  opacity: 1;
+  z-index: 2;
 }
 
 
@@ -88,7 +96,7 @@
   font-size: 22px;
 }
 .miniCard {
-  background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
+  background: rgba(30, 53, 86, 0.7);
   border-radius: 20px;
   padding: 5%;
   height: 210px;
@@ -102,11 +110,13 @@
 }
 
 .miniCardRose {
-  background-image: linear-gradient(to left, #ed475d, #f06071, #f27785, #f38c99, #f2a0ab);
+  background: rgba(237, 71, 93, 0.7);
   border-radius: 20px;
   padding: 5%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
 }
+
+
 .comming {
   color: #ED475D;
   font-size: 32px;
@@ -147,11 +157,11 @@
 }
 
 .cardStats {
-  background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
   border-radius: 20px;
   padding: 5%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
   height: 400px;
+  background: rgba(30, 53, 86, 0.7);
 }
 
 .bicorn {
@@ -217,9 +227,10 @@
 .buttonConnect {
   cursor: pointer;
   display: inline-block;
-  padding: 20%;
+  padding: 10% 20%;
   background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
   margin: 5% auto;
+  width: 150px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
@@ -230,15 +241,41 @@
   flex-direction: column;
 }
 
+.indexContainerUnFlex {
+  display: block;
+}
 
+
+@media screen and (max-width: 1300px){
+  .connect {
+    right: 0%
+  }
+}
+@media screen and (max-width: 1155px){
+  .rowLast {
+    display: flex;
+    flex-direction: column!important;
+  }
+  .imgContainer {
+    height: 2000px;
+  }
+  .cardStats {
+    height: 450px;
+  }
+}
 @media screen and (max-width: 580px) {
   .indexContainer {
     height: 3500px;
   }
+
 }
 
 @media screen and (max-width: 490px) {
   .main {
     width: 150%;
+  }
+  .connect {
+    right: -35% !important;
+    top: 5%
   }
 }

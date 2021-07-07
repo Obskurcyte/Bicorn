@@ -23,10 +23,10 @@ export default function Nap() {
       <div className="indexContainer">
         <SideBar classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
         <SideBarMobile classNameNap={classNameNap} classNameHome={classNameHome} classNameHives={classNameHives} classNameLottery={classNameLottery} classNameStackes={classNameStakes}/>
-        <div className="main">
+        <div className="main mainNap">
           <div className="imgContainerNap">
             <div className="comingSoonContainer">
-              <h1 className="white comingSoonText">Comming Soon</h1>
+              <h1 className="white comingSoonText">Coming Soon</h1>
             </div>
           </div>
         </div>

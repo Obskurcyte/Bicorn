@@ -4,13 +4,17 @@ import {faStopwatch} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCalculator} from "@fortawesome/free-solid-svg-icons";
 import Dialog from '@material-ui/core/Dialog';
-
+import Countdown from 'react-countdown';
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
 
   const handleClose = () => {
     onClose(selectedValue);
+
+
+
+
   };
 
   const handleListItemClick = (value) => {
@@ -64,7 +68,7 @@ const CardHives = () => {
   return (
     <div className="cardBicorn hiveCard">
       <div className="titleContainer flex">
-        <img src={'/logoEnvers.png'} alt="" className="imgCardHive"/>
+        <img src={'/logoRetourne.png'} alt="" className="imgCardHive"/>
         <div className='flex-column flex'>
           <h5 className="hiveTitle">Bicorn-Busd LP</h5>
           <div className="flex ml-3 fees my-3">
