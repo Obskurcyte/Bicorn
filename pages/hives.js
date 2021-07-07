@@ -104,7 +104,12 @@ export default function Hives() {
     const NavBarMobile = () => {
       return (
         <nav>
-          <FontAwesomeIcon icon={faBars} onClick={() => setToggle(!toggle)} color="black"/>
+          <FontAwesomeIcon icon={faBars} onClick={() => setToggle(!toggle)} color="black" className="bars"/>
+          <div className="connect connectMini none">
+            <div className="buttonConnect">
+              <p className="white connectText">Connect</p>
+            </div>
+          </div>
         </nav>
       )
     }
@@ -113,7 +118,7 @@ export default function Hives() {
       <div className={"miniNav"}>
         {!toggle ? <NavBarMobile /> :
 
-          <div className={toggle ? "smallSideBar display" : "container-sideBar none"}>
+          <div className={!toggle ? "smallSideBar display" : "container-sideBar none"}>
             <FontAwesomeIcon icon={faBars} onClick={() => {
               console.log('toggled')
               setToggle(!toggle)
@@ -262,7 +267,7 @@ export default function Hives() {
             </div>
           </div>
 
-          <div className="connect">
+          <div className="connect display">
             <div className="buttonConnect">
               <p className="white connectText">Connect</p>
             </div>

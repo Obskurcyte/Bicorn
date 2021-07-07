@@ -29,7 +29,12 @@ export default function Home() {
     const NavBarMobile = () => {
       return (
         <nav>
-          <FontAwesomeIcon icon={faBars} onClick={() => setToggle(!toggle)} color="black"/>
+          <FontAwesomeIcon icon={faBars} onClick={() => setToggle(!toggle)} color="black" className="bars"/>
+          <div className="connect connectMini none">
+            <div className="buttonConnect">
+              <p className="white connectText">Connect</p>
+            </div>
+          </div>
         </nav>
       )
     }
@@ -279,7 +284,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="connect">
+        <div className="connect display">
           <div className="buttonConnect">
             <p className="white connectText">Connect</p>
           </div>

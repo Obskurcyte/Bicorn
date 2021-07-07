@@ -44,7 +44,11 @@
   background: rgba(30, 53, 86, 0.7);
 }
 
-
+.bars {
+  height: 50%;
+  width: 2em!important;
+  margin-top: 2%;
+}
 .cardBicorn h3 {
   color: white;
   font-size: 32px;
@@ -52,6 +56,9 @@
   z-index: 2;
 }
 
+.connectMini {
+  position: unset!important;
+}
 
 .comingSoonContainer {
   position: absolute;
@@ -275,7 +282,14 @@
     width: 150%;
   }
   .connect {
-    right: -35% !important;
-    top: 5%
+    margin-left: 100%;
   }
 }
+
+
+@media screen and (max-width: 350px) {
+  .connect {
+    margin-left: 90%;
+  }
+}
+

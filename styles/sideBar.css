@@ -193,7 +193,13 @@ display: none;
     display: none;
   }
   .miniNav {
-    display: block;
+    display: flex;
+  }
+  .miniNav nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2% 5%;
   }
   .main {
     margin-left: 0;
@@ -211,10 +217,6 @@ display: none;
   .midRow, .firstRow{
     display: flex;
     flex-direction: column!important;
-  }
-  .connect {
-    right: 15%;
-    top: 5%
   }
   .imgContainer {
     height: 3000px;
