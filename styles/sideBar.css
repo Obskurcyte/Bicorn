@@ -218,6 +218,10 @@ display: none;
     display: flex;
     flex-direction: column!important;
   }
+  .cardsContainer {
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
   .imgContainer {
     height: 3000px;
   }

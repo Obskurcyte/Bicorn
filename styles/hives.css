@@ -13,8 +13,9 @@
 }
 
 .cardsContainer {
-  width: 100%;
-  margin: 10% auto;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .hiveTitle {
@@ -186,12 +187,7 @@
   }
 }
 
-@media screen and (max-width: 1383px){
-  .cardsContainer {
-    margin-left: 10%;
-    max-width: 90%;
-  }
-}
+
 
 @media screen and (max-width: 1300px) {
   .hiveTitle {
@@ -201,7 +197,7 @@
 
 @media screen and (max-width: 1190px){
   .cardsContainer {
-    margin-left: 15%;
+    margin-left: 18%;
     max-width: 80%;
   }
   .hiveTitle {
