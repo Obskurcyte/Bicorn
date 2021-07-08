@@ -169,7 +169,7 @@ const SideBar = props => {
       </Link>
       <Link href={'/lottery'}>
         <div className={isActive ? "linkContainerActive" : props.classNameLottery}>
-          <img src={'/icone4.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+          <img src={'/icone10.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
 
             <p className={isActive ? 'active' : ''}>Lottery</p>
 
@@ -180,7 +180,7 @@ const SideBar = props => {
         <p className={isActive ? 'active' : ''}>N-FTs</p>
       </div>
       <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-        <img src={'/icone3.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+        <img src={'/icone4.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
         <p className={isActive ? 'active' : ''}>INO</p>
       </div>
       <div className={isActive ? "linkContainerActive" : "linkContainer"}>

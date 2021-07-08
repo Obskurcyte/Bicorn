@@ -4,6 +4,7 @@
   padding-top: 10%;
   margin: 0 auto;
   background-size: contain;
+  background-blend-mode: darken;
   background-image: url('/illusHives.png');
 }
 
@@ -15,7 +16,7 @@
 .cardsContainer {
   width: 75%;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 11%;
 }
 
 .hiveTitle {

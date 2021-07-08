@@ -8,6 +8,7 @@ import Switch from '@material-ui/core/Switch';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import CardStakes from "../components/cardStakes";
 
 const IOSSwitch = withStyles((theme) => ({
   root: {
@@ -244,24 +245,24 @@ export default function Hives() {
             <div className="cardsContainer container">
               <div className="row mb-4 hiveOne">
                 <div className="col-sm my-4">
-                  <CardHives/>
+                  <CardStakes/>
                 </div>
                 <div className="col-sm my-4">
-                  <CardHives/>
+                  <CardStakes/>
                 </div>
                 <div className="col-sm my-4">
-                  <CardHives/>
+                  <CardStakes/>
                 </div>
               </div>
               <div className="row mb-4 hiveTwo">
                 <div className="col-sm my-4">
-                  <CardHives/>
+                  <CardStakes/>
                 </div>
                 <div className="col-sm my-4">
-                  <CardHives/>
+                  <CardStakes/>
                 </div>
                 <div className="col-sm my-4">
-                  <CardHives/>
+                  <CardStakes/>
                 </div>
               </div>
             </div>
@@ -272,7 +273,6 @@ export default function Hives() {
               <p className="white connectText">Connect</p>
             </div>
           </div>
-
 
         </div>
       </div>

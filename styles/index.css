@@ -21,8 +21,7 @@
 }
 
 .main {
-  background-image: linear-gradient(to right bottom, #8d3c55, #7c3a5d, #693962, #533963, #3c3860, #30365b, #253456, #1b3250, #19304c, #172e47, #152b43, #13293f);  width: 100%;
-  margin-left: 13%;
+  background-image: linear-gradient(to right bottom, #d54d5f, #b94470, #373b66, #373b66, #373b66, #373b66, #28375c, #1b3250, #19304c, #172e47, #152b43, #13293f);  margin-left: 13%;
 }
 
 .titleContainer h1 {
@@ -49,7 +48,7 @@
   margin-top: 2%;
 }
 .cardBicorn h3 {
-  color: white;
+  color: #A1AAB7;
   font-size: 32px;
   opacity: 1;
   z-index: 2;
@@ -76,12 +75,11 @@
 }
 
 .locked {
-  color: #F4B1BA;
+  color: #D54D5F;
   font-size: 15px;
 }
 
 .buttonContainer {
-  background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
   width: 40%;
   margin: 5% auto;
   border-radius: 10px;
@@ -89,6 +87,7 @@
   padding: 3% 4%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
   cursor: pointer;
+  background-color: #D54D5F;
 }
 
 .unlocked {
@@ -197,7 +196,7 @@
 
 .comingSoon {
   font-family: MontSerrat-Bold, sans-serif;
-  color: #F4B1BA;
+  color: #D54D5F;
   font-size: 32px;
   margin-bottom: 12% !important;
 }
@@ -227,18 +226,18 @@
 .connect {
   position: absolute;
   top: 2%;
-  right: 7%;
+  right: 3%;
 }
 
 .buttonConnect {
   cursor: pointer;
   display: inline-block;
   padding: 10% 20%;
-  background-image: radial-gradient(circle, #f699a5, #f58e9b, #f48391, #f37887, #f16c7d);
   margin: 5% auto;
   width: 150px;
   border-radius: 10px;
   text-align: center;
+  background-color: #D54D5F;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
 }
 
