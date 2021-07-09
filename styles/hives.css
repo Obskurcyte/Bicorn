@@ -5,7 +5,7 @@
   margin: 0 auto;
   background-size: contain;
   background-blend-mode: darken;
-  background-image: url('/illusHives.png');
+  background: no-repeat url('/illusHives.png');
 }
 
 .illustrationImg2 {
