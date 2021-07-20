@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from "next/link";
-import {faStopwatch} from "@fortawesome/free-solid-svg-icons";
+import {faChevronUp, faStopwatch} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCalculator} from "@fortawesome/free-solid-svg-icons";
+import {faCalculator, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import Dialog from '@material-ui/core/Dialog';
 import Countdown from 'react-countdown';
+import ReactStopwatch from 'react-stopwatch';
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -54,17 +55,39 @@ function SimpleDialog(props) {
   );
 }
 
+const Stopwatch = () => (
+  <ReactStopwatch
+    seconds={0}
+    minutes={0}
+    hours={2}
+    onChange={({ hours, minutes, seconds }) => {
+      // do something
+    }}
+    onCallback={() => console.log('Finish')}
+    render={({ formatted, hours, minutes, seconds }) => {
+      return (
+        <div>
+          <p style={{color: 'white'}}>{formatted}</p>
+        </div>
+      );
+    }}
+  />
+);
+
 const CardHives = () => {
 
-  const [open, setOpen] = React.useState(false);
 
+  const [open, setOpen] = React.useState(false);
+  const [openDetails, setOpenDetails] = useState(false);
   const handleClickOpen = () => {
     setOpen(true);
   };
 
+  console.log(openDetails)
   const handleClose = (value) => {
     setOpen(false);
   };
+
   return (
     <div className="cardBicorn hiveCard">
       <div className="titleContainer flex">
@@ -87,7 +110,8 @@ const CardHives = () => {
         </div>
         <div className="flex">
           <p className="white mr-4">546,7565%</p>
-          <FontAwesomeIcon icon={faCalculator} style={{color: 'white'}} onClick={handleClickOpen}/>
+          {/*<FontAwesomeIcon icon={faCalculator} style={{color: 'white'}} onClick={handleClickOpen}/> */}
+          <Stopwatch />
           <SimpleDialog open={open} onClose={handleClose} />
         </div>
       </div>
@@ -143,8 +167,25 @@ const CardHives = () => {
 
       <hr className="hrHives"/>
 
-      <div className="detailsContainer">
-        <p>Details</p>
+      <div className="detailsContainer" onClick={() => {
+        setOpenDetails(!openDetails)
+      }}>
+        {openDetails ?
+          <div className='openContainer' onClick={() => setOpenDetails(!openDetails)}>
+            <div className='flex chevron'>
+              <p>Hide</p>
+              <FontAwesomeIcon icon={faChevronUp} style={{color: 'white', width: '20%', marginTop: '3%'}} size={10}/>
+            </div>
+
+            <h5 style={{textAlign: 'center'}}>Total Liquidity: $34554554</h5>
+
+          </div>
+
+          : <div className='flex chevron'>
+            <p>Details</p>
+            <FontAwesomeIcon icon={faChevronDown} style={{color: 'white', width: '20%', marginTop: '3%'}} size={10}/>
+          </div>}
+
       </div>
     </div>
   );

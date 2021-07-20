@@ -43,4 +43,7 @@
   .comingSoonText {
     font-size: 30px;
   }
+  .comingSoonText {
+    margin-left: -28%;
+  }
 }

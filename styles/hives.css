@@ -3,11 +3,14 @@
   height: 1500px;
   padding-top: 10%;
   margin: 0 auto;
-  background-size: contain;
+  background-size: 1000px;
   background-blend-mode: darken;
   background: no-repeat url('/illusHives.png');
 }
 
+.containerSmall {
+  display: none;
+}
 .illustrationImg2 {
   width: 150%;
   margin: 0 auto;
@@ -65,11 +68,12 @@
 .hiveCard {
   padding-top: 12%;
   height: 500px;
-  width: 100%;
+  width: 380px;
 }
 
 .fees {
   width: 100%;
+  justify-content: space-around;
 }
 
 .specialColor {
@@ -150,8 +154,17 @@
   color: #ed475d;
 }
 
+.chevron {
+  margin-left: 35%;
+  width: 30%;
+  justify-content: space-around;
+}
 .innerTitle p {
   font-size: 18px;
+  color: white;
+}
+
+.openContainer {
   color: white;
 }
 
@@ -164,6 +177,9 @@
   color: white
 }
 
+.containerMedium {
+  display: none;
+}
 .MuiTypography-body1 {
   font-size: 2rem;
   font-family: MontSerrat-SemiBold, sans-serif;
@@ -174,6 +190,18 @@
   letter-spacing: 0.00938em;
 }
 
+
+@media screen and (max-width: 1600px){
+  .containerBig {
+    display: none;
+  }
+  .containerMedium {
+    display: block;
+  }
+  .imgContainer2 {
+    height: 1990px;
+  }
+}
 
 @media screen and (max-width: 1500px){
   .cardsContainer {
@@ -198,48 +226,52 @@
 
 @media screen and (max-width: 1190px){
   .cardsContainer {
-    margin-left: 18%;
+    margin-left: 13%;
     max-width: 80%;
   }
   .hiveTitle {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 1088px){
+
+@media screen and (max-width: 1100px){
   .hiveTitle {
     font-size: 16px;
   }
   .imgCardHive {
-    height: 30px;
-    width: 30px;
+    height: 75px;
+    width: 75px;
+  }
+  .cardsContainer {
+    margin-left: 25%;
+  }
+  .hiveCard {
+    padding-top: 9%;
   }
 }
 
-@media screen and (max-width: 1024px){
-  .hiveTitle {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 1024px){
-  .hiveTitle {
-    font-size: 13px;
-  }
-}
+@media screen and (max-width: 900px){
 
-@media screen and (max-width: 870px){
-  .hiveTitle {
-    font-size: 11px;
-  }
 }
 @media screen and (max-width: 860px){
   .hiveTitle {
     font-size: 15px;
   }
   .cardsContainer {
-    margin-left: 0%;
+    margin-left: 24%!important;
     max-width: 100%;
   }
 
+  .containerSmall {
+    display: block;
+  }
+  .containerMedium {
+    display: none;
+  }
+  .imgContainer2 {
+    height: 3400px;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -250,21 +282,29 @@
     padding: 8%;
     height : 550px
   }
+  .cardsContainer {
+    margin-left: 13%!important;
+  }
   .imgContainer2 {
     height: 3830px;
   }
 }
 
 @media screen and (max-width: 544px){
-  .hiveTitle {
-    font-size: 22px;
-  }
-  .imgCardHive {
-    width: 50px;
-    height: 50px;
+  .cardsContainer {
+    margin-left: 0!important;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hiveCard {
+    height: 500px;
+    width: 315px;
+  }
+  .imgContainer2 {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 352px){
   .hiveTitle {
     font-size: 18px;

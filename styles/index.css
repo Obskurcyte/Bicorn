@@ -90,6 +90,19 @@
   background-color: #D54D5F;
 }
 
+.container-sideBar-Mobile {
+  background-color: #1E3556;
+  height: 100%;
+  padding-left: 1%;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+}
+
+.buttonContainer:hover {
+  background-color: #F4919E;
+}
+
 .unlocked {
   color: white;
   font-size: 15px;
@@ -120,7 +133,6 @@
   padding: 5%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
 }
-
 
 .comming {
   color: #ED475D;
@@ -241,6 +253,19 @@
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
 }
 
+.MuiDialog-paper {
+  margin: 0!important;
+  width: 100%;
+}
+
+.MuiDialog-paperScrollPaper {
+  height:100% !important;
+  border-radius: 0!important;
+}
+.MuiDialog-container {
+  width: 40%;
+  margin-top: 75px !important;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -275,14 +300,6 @@
 
 }
 
-@media screen and (max-width: 490px) {
-  .main {
-    width: 150%;
-  }
-  .connect {
-    margin-left: 100%;
-  }
-}
 
 
 @media screen and (max-width: 350px) {

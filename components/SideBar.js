@@ -24,7 +24,6 @@ export const SideBarMobile = props => {
       {!props.toggle ? <NavBarMobile /> :
 
         <div className={!props.toggle ? "smallSideBar display" : "container-sideBar none"}>
-          <FontAwesomeIcon icon={faBars} onClick={() => setViewMobile(true)} color="white"/>
           {viewMobile && (
             <div>
               <Link href='/'>
@@ -97,10 +96,6 @@ export const SideBarMobile = props => {
                   <div className={isActive ? "flex-column" : "miniTotal flex"}>
                     <img src={'/LogoBicorn.png'} alt="" className={isActive ? "logoImageActive" : "logoImage"}/>
                     <h5 className={isActive ? "priceMiniActive" : "priceMini"}>12, 984€</h5>
-                  </div>
-                  <div className={isActive ? "flex-column" : "flex"}>
-                    <img src={'/Mapicon.png'} alt="" className={isActive ? "logoImageActive" : "logoImage"}/>
-                    <p className={isActive ? 'langActive' : "lang"} >EN</p>
                   </div>
                 </div>
 
@@ -208,7 +203,7 @@ const SideBar = props => {
             </div>
           </div>
 
-            <div className={isActive ? "flex-column" : "miniTotal flex"}>
+            <div className={isActive ? "flex-column" : "miniTotal flex linksGit"}>
               <img src={'/githubIcon.png'} alt="" className={isActive ? "img-linksActive" : "img-links"}/>
               <img src={'/Twittericon.png'} alt="" className={isActive ? "img-linksActive" : "img-links"}/>
               <img src={'/Mailicon.png'} alt="" className={isActive ? "img-linksActive" : "img-links"}/>

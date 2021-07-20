@@ -18,8 +18,8 @@
 }
 
 .container-sideBar::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: #1b3250;
+  outline: 1px solid #1b3250;
 }
 
 .container-sideBarActive {
@@ -43,7 +43,7 @@
 }
 
 .imgSideBar {
-  height: 75px;
+  height: 45px;
 }
 
 .linkContainerActive {
@@ -109,7 +109,7 @@
 
 
 .bicornSideBarLogo {
-  width: 70%;
+  width: 60%;
   margin-bottom: 20%;
   margin-top: 13%;
   margin-left: 11%;
@@ -133,12 +133,23 @@
   margin: 0 auto;
 }
 
+.miniTotal {
+  width: 100%;
+}
 
 .priceMini {
 color: #ED475D;
-font-size: 15px;
+font-size: 22px;
 }
 
+.linksGit {
+  margin-left: 13%;
+  margin-top: 3%;
+}
+
+.logoImage {
+    height: 100%;
+ }
 .priceMiniActive {
   color: #ED475D;
   font-size: 13px;
@@ -204,7 +215,7 @@ display: none;
   }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 1100px){
   .display {
     display: none;
   }
