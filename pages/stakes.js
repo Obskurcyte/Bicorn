@@ -248,28 +248,74 @@ export default function Hives() {
               label="Stacked Only"
             />
             */}
-            <div className="cardsContainer container">
-              <div className="row mb-4 hiveOne">
-                <div className="col-sm my-4">
+            <div className="cardsContainer container containerBig">
+              <div className="flex mb-4">
+                <div className="col my-4">
                   <CardStakes/>
                 </div>
-                <div className="col-sm my-4">
+                <div className="col my-4">
                   <CardStakes/>
                 </div>
-                <div className="col-sm my-4">
+                <div className="col my-4">
                   <CardStakes/>
                 </div>
               </div>
-              <div className="row mb-4 hiveTwo">
-                <div className="col-sm my-4">
+              <div className="flex mb-4">
+                <div className="col my-4">
                   <CardStakes/>
                 </div>
-                <div className="col-sm my-4">
+                <div className="col my-4">
                   <CardStakes/>
                 </div>
-                <div className="col-sm my-4">
+                <div className="col my-4">
                   <CardStakes/>
                 </div>
+              </div>
+            </div>
+
+            <div className="cardsContainer container containerMedium">
+              <div className="flex mb-4">
+                <div className="col my-4">
+                  <CardStakes/>
+                </div>
+                <div className="col my-4">
+                  <CardStakes/>
+                </div>
+              </div>
+              <div className="flex mb-4">
+                <div className="col my-4">
+                  <CardStakes/>
+                </div>
+                <div className="col my-4">
+                  <CardStakes/>
+                </div>
+              </div>
+              <div className="flex mb-4">
+                <div className="col my-4">
+                  <CardStakes/>
+                </div>
+                <div className="col my-4">
+                  <CardStakes/>
+                </div>
+              </div>
+            </div>
+
+            <div className="cardsContainer container containerSmall">
+              <CardStakes/>
+              <div className="my-4">
+                <CardStakes/>
+              </div>
+              <div className="my-4">
+                <CardStakes/>
+              </div>
+              <div className="my-4">
+                <CardStakes/>
+              </div>
+              <div className="my-4">
+                <CardStakes/>
+              </div>
+              <div className="my-4">
+                <CardStakes/>
               </div>
             </div>
           </div>
