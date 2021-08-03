@@ -5,6 +5,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCalculator} from "@fortawesome/free-solid-svg-icons";
 import Dialog from '@material-ui/core/Dialog';
 import Countdown from 'react-countdown';
+import ReactStopwatch from "react-stopwatch";
+
+const Stopwatch = () => (
+    <ReactStopwatch
+        seconds={0}
+        minutes={0}
+        hours={2}
+        onChange={({ hours, minutes, seconds }) => {
+            // do something
+        }}
+        onCallback={() => console.log('Finish')}
+        render={({ formatted, hours, minutes, seconds }) => {
+            return (
+                <div>
+                    <p style={{color: 'white'}}>{formatted}</p>
+                </div>
+            );
+        }}
+    />
+);
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -112,7 +132,7 @@ const CardStakes = () => {
           <p className="specialColor">Harvest Duration: </p>
         </div>
         <div>
-          <p className="white"><FontAwesomeIcon icon={faStopwatch} /></p>
+            <Stopwatch />
         </div>
       </div>
 

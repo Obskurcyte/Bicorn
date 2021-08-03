@@ -67,71 +67,67 @@ export default function Home() {
     };
 
     return (
-      <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-        <div className="container-sideBar-Mobile">
+        <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
+          <div className="container-sideBar-Mobile">
             <div>
               <Link href='/'>
                 <div className={isActive ? "linkContainerActive" : props.classNameHome}>
-                  <img src={'/icone2.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                  {props.classNameHome === 'linkContainerPink' ? <img src={'/icon (3) - Copie.svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/> : <img src={'/icon (3).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>}
                   <p className={isActive ? 'active' : ''}>Home</p>
                 </div>
               </Link>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone3.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/icon (2).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>Trade</p>
               </div>
               <Link
-                href={'/hives'}
+                  href={'/hives'}
               >
                 <div className={isActive ? "linkContainerActive" : props.classNameHives}>
-                  <img src={'/iconeAbeille.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
-
+                  {props.classNameHives === 'linkContainerPink' ? <img src={'/icon (4) - Copie.svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/> : <img src={'/icon (4).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>}
                   <p className={isActive ? 'active' : ''}>Hives</p>
-
                 </div>
               </Link>
               <Link href={'/stakes'}>
                 <div className={isActive ? "linkContainerActive" : props.classNameStackes}>
-                  <img src={'/icone5.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                  {props.classNameStackes === 'linkContainerPink' ? <img src={'/icon (5) - Copie.svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/> : <img src={'/icon (5).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>}
                   <p className={isActive ? 'active' : ''}>Stakes</p>
                 </div>
               </Link>
               <Link href={'/nap'}>
                 <div className={isActive ? "linkContainerActive" : props.classNameNap}>
-                  <img src={'/icone6.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                  <img src={'/icon (6).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                   <p className={isActive ? 'active' : ''}>Nap</p>
                 </div>
               </Link>
               <Link href={'/lottery'}>
                 <div className={isActive ? "linkContainerActive" : props.classNameLottery}>
-                  <img src={'/icone10.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
-
+                  {props.classNameLottery === 'linkContainerPink' ? <img src={'/icon (7) - Copie.svg'} alt="" className={isActive ? "imgActive" : "imgSideBar imgLottery"}/> : <img src={'/icon (7).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar imgLottery"}/>}
                   <p className={isActive ? 'active' : ''}>Lottery</p>
-
                 </div>
               </Link>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone8.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/icon (8).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>N-FTs</p>
               </div>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone4.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/i-con.svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>INO</p>
               </div>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone9.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/icon (9).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>Team & Profile</p>
               </div>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone11.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/icon (10).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>Features</p>
               </div>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone7.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/icon (11).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>Civil Code</p>
               </div>
               <div className={isActive ? "linkContainerActive" : "linkContainer"}>
-                <img src={'/icone13.png'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
+                <img src={'/icon (12).svg'} alt="" className={isActive ? "imgActive" : "imgSideBar"}/>
                 <p className={isActive ? 'active' : ''}>Conquest</p>
               </div>
 
@@ -143,7 +139,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={isActive ? "flex-column" : "miniTotal flex"}>
+                <div className={isActive ? "flex-column" : "miniTotal flex linksGit"}>
                   <img src={'/githubIcon.png'} alt="" className={isActive ? "img-linksActive" : "img-links"}/>
                   <img src={'/Twittericon.png'} alt="" className={isActive ? "img-linksActive" : "img-links"}/>
                   <img src={'/Mailicon.png'} alt="" className={isActive ? "img-linksActive" : "img-links"}/>
@@ -155,8 +151,8 @@ export default function Home() {
               </div>
             </div>
 
-        </div>
-      </Dialog>
+          </div>
+        </Dialog>
     );
   }
 

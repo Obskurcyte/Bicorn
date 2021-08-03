@@ -134,7 +134,7 @@
 
 .dialogContainer {
   padding: 5%;
-  width: 500px;
+  width: 100%;
   background-image: radial-gradient(circle, #58759f, #49648c, #3b547a, #2c4468, #1e3556);
 }
 

@@ -43,9 +43,15 @@
 }
 
 .imgSideBar {
-  height: 45px;
+  height: 32px;
+  color: white
 }
 
+.imgLottery {
+  width: 37px;
+  height: unset;
+  margin-right: 24px!important;
+}
 .linkContainerActive {
   display: flex;
   height: 15px;
@@ -57,6 +63,7 @@
 .imgActive {
   margin: 0 auto;
   height: 60px;
+  color: #768498;
 }
 
 #pageContainer {
@@ -81,11 +88,12 @@
   text-align: center;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
   cursor: pointer;
+  padding: 5%;
   margin-top: 5%;
   margin-bottom: 10%;
   height: 40px;
   align-items: center;
-  background-color: #D54D5F;
+  background: radial-gradient(circle at 25% -132%, #f4b1ba, #ed475d 83%), linear-gradient(159deg, rgba(246, 213, 218, 0.62) 1%, #a72e49 86%);;
 }
 
 .linkContainer p {
@@ -251,6 +259,16 @@ display: none;
   }
   .imgContainer {
     height: 3000px;
+  }
+  .priceMini {
+    font-size: 15px;
+  }
+  .links {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .linksGit {
+    margin-left: 0;
   }
 }
 

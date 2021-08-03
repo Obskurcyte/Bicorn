@@ -21,7 +21,7 @@
 }
 
 .main {
-  background-image: linear-gradient(to right bottom, #d54d5f, #b94470, #373b66, #373b66, #373b66, #373b66, #28375c, #1b3250, #19304c, #172e47, #152b43, #13293f);  margin-left: 13%;
+  background-image: linear-gradient(to right bottom, #ed475d, #b94470, #373b66, #373b66, #373b66, #373b66, #28375c, #1b3250, #19304c, #172e47, #152b43, #13293f);  margin-left: 13%;
 }
 
 .titleContainer h1 {
@@ -87,16 +87,19 @@
   padding: 3% 4%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
   cursor: pointer;
-  background-color: #D54D5F;
+  background: radial-gradient(circle at 25% -132%, #f4b1ba, #ed475d 83%), linear-gradient(159deg, rgba(246, 213, 218, 0.62) 1%, #a72e49 86%);;
 }
 
+.buttonContainer:hover {
+  background-image: linear-gradient(148deg, #ed475d -16%, rgba(21, 41, 63, 0.01) 59%, rgba(19, 41, 63, 0) 59%);
+}
 .container-sideBar-Mobile {
   background-color: #1E3556;
   height: 100%;
-  padding-left: 1%;
   overflow-y: scroll;
   top: 0;
   bottom: 0;
+  padding-left: 8%;
 }
 
 .buttonContainer:hover {
@@ -128,7 +131,7 @@
 }
 
 .miniCardRose {
-  background: rgba(237, 71, 93, 0.7);
+  background: radial-gradient(circle at 25% -132%, #f4b1ba, #ed475d 83%), linear-gradient(159deg, rgba(246, 213, 218, 0.62) 1%, #a72e49 86%);;
   border-radius: 20px;
   padding: 5%;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.54);
@@ -249,7 +252,7 @@
   width: 150px;
   border-radius: 10px;
   text-align: center;
-  background-color: #D54D5F;
+  background: radial-gradient(circle at 25% -132%, #f4b1ba, #ed475d 83%), linear-gradient(159deg, rgba(246, 213, 218, 0.62) 1%, #a72e49 86%);;
   box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.27);
 }
 
@@ -259,12 +262,11 @@
 }
 
 .MuiDialog-paperScrollPaper {
-  height:100% !important;
   border-radius: 0!important;
 }
 .MuiDialog-container {
-  width: 40%;
-  margin-top: 75px !important;
+  width: 100%;
+  margin-top: 50px !important;
 }
 .flex-column {
   display: flex;
@@ -296,6 +298,9 @@
 @media screen and (max-width: 580px) {
   .indexContainer {
     height: 3500px;
+  }
+  .adress {
+    font-size: 10px;
   }
 
 }

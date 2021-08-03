@@ -109,10 +109,8 @@ const CardHives = () => {
           <p className="specialColor">APR</p>
         </div>
         <div className="flex">
-          <p className="white mr-4">546,7565%</p>
+          <p className="white">546,7565%</p>
           {/*<FontAwesomeIcon icon={faCalculator} style={{color: 'white'}} onClick={handleClickOpen}/> */}
-          <Stopwatch />
-          <SimpleDialog open={open} onClose={handleClose} />
         </div>
       </div>
       <div className="innerHives flex justify-content-between">
@@ -136,7 +134,7 @@ const CardHives = () => {
           <p className="specialColor">Harvest Duration: </p>
         </div>
         <div>
-          <p className="white"><FontAwesomeIcon icon={faStopwatch} /></p>
+            <Stopwatch />
         </div>
       </div>
 
