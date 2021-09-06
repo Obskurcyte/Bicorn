@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Head from 'next/head'
-
 import SideBar, {SideBarMobile} from "../components/SideBar";
 import CardHives from "../components/cardHives";
 import Switch from '@material-ui/core/Switch';
