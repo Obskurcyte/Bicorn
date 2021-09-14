@@ -275,9 +275,14 @@
 
 .indexContainerUnFlex {
   display: block;
+  background-image: linear-gradient(to right bottom, #ed475d, #b94470, #373b66, #373b66, #373b66, #373b66, #28375c, #1b3250, #19304c, #172e47, #152b43, #13293f);
 }
 
-
+@media screen and (max-width: 1600px){
+  .imgContainer {
+      background: no-repeat fixed url("/illustration.png");
+  }
+}
 @media screen and (max-width: 1300px){
   .connect {
     right: 0%

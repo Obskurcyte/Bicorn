@@ -13,8 +13,9 @@
   height: 1300px;
   margin: 0 auto;
   padding-top: 10%;
-  background: url("/fondPiece2.png");
+  background: url("/fondPiece2.png") no-repeat;
   background-size: contain;
+  background-position: 35% 0;
 }
 
 
